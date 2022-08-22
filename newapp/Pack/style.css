@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+
+    
+}
+#image {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    /* top: 500px;
+    left: 500px; */
+}
