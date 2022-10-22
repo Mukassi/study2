@@ -17,6 +17,7 @@ const CharList = (props) => {
 
     useEffect(() => {
         onRequest();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
 
@@ -89,26 +90,26 @@ const CharList = (props) => {
         )
     }
         
-    const items = renderItems(charList);
+        const items = renderItems(charList);
 
-    const errorMessage = error ? <ErrorMessage/> : null;
-    const spinner = loading ? <Spinner/> : null;
-    const content = !(loading || error) ? items : null;
+        const errorMessage = error ? <ErrorMessage/> : null;
+        const spinner = loading ? <Spinner/> : null;
+        const content = !(loading || error) ? items : null;
 
-    return (
-        <div className="char__list">
-            {errorMessage}
-            {spinner}
-            {content}
-            <button 
-                className="button button__main button__long"
-                disabled={newItemsLoading}
-                style = {{'display' : charEnded ? 'none' : 'block'}}
-                onClick={ () => onRequest(offset)}>
-                <div className="inner">load more</div>
-            </button>
-        </div>
-    )
+        return (
+            <div className="char__list">
+                {errorMessage}
+                {spinner}
+                {content}
+                <button 
+                    className="button button__main button__long"
+                    disabled={newItemsLoading}
+                    style = {{'display' : charEnded ? 'none' : 'block'}}
+                    onClick={ () => onRequest(offset)}>
+                    <div className="inner">load more</div>
+                </button>
+            </div>
+        )
     }
 
 CharList.propTypes = {
