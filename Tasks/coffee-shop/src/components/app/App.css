@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+}
+.App{
+    font-family: 'Merienda', cursive;
+    letter-spacing: 0em;
+}
+.page{
+    background-image: url(../../resourses/img/mainBG.jpg);
+    height: 70vh;
+    background-size:cover;
+}
+.ourBestContent{
+    background-image: url('../../resourses/img/aboutusBg.jpg');
+    background-size: cover;
+}

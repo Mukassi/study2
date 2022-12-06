@@ -1,0 +1,12 @@
+.card-wrapper{
+
+    display: flex;
+    width: 220px;
+    height: 240px;
+    flex-direction: column;
+
+    text-align: right;
+}
+.price{
+    text-align: right;
+}
